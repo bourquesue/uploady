@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  get 'comments/new'
+  root to: 'photos#index'
 
   devise_for :users
-  resources :photos
   resources :photos do
   	resources :comments  	
   end
