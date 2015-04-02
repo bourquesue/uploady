@@ -16,7 +16,7 @@ class PhotosTable < TableCloth::Base
     end 
 
     action do |photo|
-      if photo.commments.any?
+      if photo.comments.any?
       link_to 'View all comments', photo_comments_path(photo)
         end
       end 
